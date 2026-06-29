@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Budget App - Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='signup.css') }}">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- Left Section -->
+    <div class="left-section">
+
+        <img src="{{ url_for('static', filename='wallet.png') }}" alt="Wallet">
+        <h1>Smart Budget App</h1>
+
+        <div class="line"></div>
+
+        <p>
+            Start tracking your expenses today,
+            <br>
+            save smarter and live better.
+        </p>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="signup-box">
+
+        <h2>Create Account</h2>
+
+        <p class="subtitle">
+            Join Smart Budget App
+        </p>
+
+        <input type="text"
+               placeholder="Enter Full Name">
+
+        <input type="email"
+               placeholder="Enter Email">
+
+        <input type="text"
+               placeholder="Create Username">
+
+        <input type="password"
+               placeholder="Create Password">
+
+        <input type="password"
+               placeholder="Confirm Password">
+
+       <button onclick="window.location.href='/dashboard'">
+        Signup
+       </button>
+
+        <div class="or">OR</div>
+             
+              <centre>Already have an account?</centre>
+       <button onclick="location.href='/index'">
+    Login
+   </button>
+    </div>
+
+</div>
+
+</body>
+</html>

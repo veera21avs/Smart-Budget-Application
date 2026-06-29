@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3e892 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.wallet-logo img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.left-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 20px auto 30px;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.login-card {
+    flex: 1;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6680ea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+button {
+    padding: 12px 15px;
+    background: linear-gradient(135deg, #17a644 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.divider {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-section h1 {
+        font-size: 36px;
+    }
+
+    .login-card {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .left-section {
+        display: none;
+    }
+}

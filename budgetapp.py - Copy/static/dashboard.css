@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f4f7f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+
+.wallet-card,
+.budget-card,
+.expense-card,
+.summary-card,
+.history-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Wallet Card */
+
+.wallet-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(
+        135deg,
+        #dceee3,
+        #f5faf7
+    );
+}
+
+.wallet-icon {
+    font-size: 55px;
+}
+
+.wallet-card h3 {
+    color: #5f7161;
+    margin-bottom: 5px;
+}
+
+.wallet-card h1 {
+    color: #355e3b;
+    font-size: 2.2rem;
+}
+
+/* Inputs */
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: 1px solid #d8e3dc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    background: #fafdfb;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #7ca982;
+    box-shadow: 0 0 8px rgba(124, 169, 130, 0.2);
+}
+
+/* Expense Card */
+
+.expense-card h2,
+.history-card h2 {
+    color: #355e3b;
+    margin-bottom: 15px;
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #7ca982;
+    color: rgb(230, 238, 243);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #65896a;
+    transform: translateY(-2px);
+}
+
+/* Summary Card */
+
+.summary-card p {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    font-size: 18px;
+    color: #4d5b4f;
+}
+
+.summary-card span {
+    font-weight: bold;
+    color: #355e3b;
+}
+
+/* Expense History */
+
+#expenseList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#expenseList li {
+    background: #f5faf7;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border-left: 5px solid #7ca982;
+    display: flex;
+    justify-content: space-between;
+    color: #4d5b4f;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .wallet-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wallet-icon {
+        font-size: 45px;
+    }
+
+    .wallet-card h1 {
+        font-size: 1.8rem;
+    }
+}

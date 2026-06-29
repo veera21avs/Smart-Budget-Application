@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Budget App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Section -->
+    <div class="left-section">
+
+        <div class="wallet-logo">
+             <img src="{{ url_for('static', filename='wallet.png') }}">
+        </div>
+
+        <h1>Smart Budget App</h1>
+
+        <div class="line"></div>
+
+        <p class="tagline">
+            Spend wisely, Save daily,<br>
+            Live better.
+        </p>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="login-card">
+
+        <h2>Welcome Back!</h2>
+        <p class="subtitle">
+            Login to continue to your account
+        </p>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Enter Username"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <button onclick="window.location.href='/dashboard'">
+             Login
+            </button>
+            <div class="divider">
+                OR
+            </div>
+            
+
+            <button onclick="window.location.href='/signup'">
+             Sign Up
+            </button>
+
+        </form>
+
+        <p class="quote">
+            A budget is telling your money where to go
+            instead of wondering where it went.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
